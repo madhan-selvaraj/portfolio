@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  background: #fff;
+}
+
+#root {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 3vh auto 5vh;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    color: #fff;
+    background: #000;
+  }
+}
