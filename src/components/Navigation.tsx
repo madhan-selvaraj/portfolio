@@ -1,5 +1,5 @@
 import { BiCircle, BiLeftArrow, BiSquareRounded } from "react-icons/bi";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledNav = styled.nav`
@@ -18,6 +18,8 @@ const StyledNav = styled.nav`
 `;
 
 const Navigation = () => {
+  const { pathname } = useLocation();
+
   return (
     <StyledNav>
       <Link to="/">
@@ -26,7 +28,7 @@ const Navigation = () => {
       <Link to="/">
         <BiSquareRounded />
       </Link>
-      <Link to={-1 as any}>
+      <Link to={ pathname === '/' ? '/' : -1 as any}>
         <BiLeftArrow />
       </Link>
     </StyledNav>
