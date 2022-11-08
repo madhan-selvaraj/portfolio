@@ -17,7 +17,9 @@ body {
 }
 
 @media screen and (prefers-color-scheme: dark) {
-  body {
+  body,
+  input,
+  textarea {
     color: #fff;
     background: #000;
   }

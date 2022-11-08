@@ -46,7 +46,7 @@ const HomeScreen = () => {
         <LauncherIcon to="/" iconPath="/assets/icons/apps/contacts.png" />
         <LauncherIcon to="/" iconPath="/assets/icons/apps/profile.png" />
         <LauncherIcon to="/" iconPath="/assets/icons/apps/browser.png" />
-        <LauncherIcon to="/" iconPath="/assets/icons/apps/mail.png" />
+        <LauncherIcon to="/mail" iconPath="/assets/icons/apps/mail.png" />
       </Drawer>
     </HomeScreenContainer>
   );
