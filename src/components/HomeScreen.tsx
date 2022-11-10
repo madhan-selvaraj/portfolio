@@ -2,7 +2,6 @@ import styled from "styled-components";
 import LauncherIcon from "./LauncherIcon";
 
 const HomeScreenContainer = styled.main`
-  /* padding: 2rem; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -10,7 +9,6 @@ const HomeScreenContainer = styled.main`
 
   .title {
     padding: 2rem;
-    line-height: 1.3rem;
     font-size: 3rem;
   }
 
@@ -47,8 +45,8 @@ const HomeScreen = () => {
         <LauncherIcon to="/" iconPath="/assets/icons/apps/projects.png" />
         <LauncherIcon to="/" iconPath="/assets/icons/apps/contacts.png" />
         <LauncherIcon to="/" iconPath="/assets/icons/apps/profile.png" />
-        <LauncherIcon to="/" iconPath="/assets/icons/apps/browser.png" />
-        <LauncherIcon to="/" iconPath="/assets/icons/apps/mail.png" />
+        <LauncherIcon to="/" iconPath="/assets/icons/apps/files.png" />
+        <LauncherIcon to="/mail" iconPath="/assets/icons/apps/mail.png" />
       </Drawer>
     </HomeScreenContainer>
   );
