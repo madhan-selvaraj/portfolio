@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { CgBattery } from "react-icons/cg";
-import { BiWifi } from "react-icons/bi";
 
 const Container = styled.div`
   padding: 2rem;
@@ -18,8 +16,8 @@ const Container = styled.div`
 const ComingSoon = () => {
   return (
     <Container>
-        <img src="/assets/icons/coming-soon.png" alt="Coming soon" />
-        <h2>Coming soon</h2>
+      <img src="/assets/icons/coming-soon.png" alt="Coming soon" />
+      <h2>Coming soon</h2>
     </Container>
   );
 };
