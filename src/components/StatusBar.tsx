@@ -15,15 +15,21 @@ const StatusBarContainer = styled.div`
     align-items: center;
   }
 
-  .icons svg{
+  .icons svg {
     margin-left: 5px;
   }
 `;
 
 const StatusBar = () => {
+  const time = new Date().toLocaleString("en-US", {
+    hour: "numeric",
+    minute: "numeric",
+    hour12: true,
+  });
+
   return (
     <StatusBarContainer>
-      Time
+      {time}
       <span className="icons">
         <BiWifi />
         <CgBattery />
