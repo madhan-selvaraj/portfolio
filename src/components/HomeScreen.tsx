@@ -42,10 +42,10 @@ const HomeScreen = () => {
       </h1>
       <span className="subtitle">A Web &amp; App developer</span>
       <Drawer>
-        <LauncherIcon to="/" iconPath="/assets/icons/apps/projects.png" />
-        <LauncherIcon to="/" iconPath="/assets/icons/apps/contacts.png" />
-        <LauncherIcon to="/" iconPath="/assets/icons/apps/profile.png" />
-        <LauncherIcon to="/" iconPath="/assets/icons/apps/files.png" />
+        <LauncherIcon to="/projects" iconPath="/assets/icons/apps/projects.png" />
+        <LauncherIcon to="/contact" iconPath="/assets/icons/apps/contacts.png" />
+        <LauncherIcon to="/profile" iconPath="/assets/icons/apps/profile.png" />
+        <LauncherIcon to="/files" iconPath="/assets/icons/apps/files.png" />
         <LauncherIcon to="/mail" iconPath="/assets/icons/apps/mail.png" />
       </Drawer>
     </HomeScreenContainer>
