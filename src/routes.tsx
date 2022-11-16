@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import { RouteObject, useRoutes } from "react-router-dom";
 import SplashScreen from "./components/SplashScreen";
 const Mail = React.lazy(() => import("./apps/Mail"));
+const Profile = React.lazy(() => import("./apps/Profile"));
 const ComingSoon = React.lazy(() => import("./components/ComingSoon"));
 const HomeScreen = React.lazy(() => import("./components/HomeScreen"));
 
@@ -43,7 +44,7 @@ const routes: RouteObject[] = [
           <SplashScreen icon="/assets/icons/apps/profile.png" title="Profile" />
         }
       >
-        <ComingSoon />
+        <Profile />
       </Suspense>
     ),
   },
