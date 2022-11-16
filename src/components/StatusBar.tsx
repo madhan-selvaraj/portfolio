@@ -9,6 +9,7 @@ const StatusBarContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  font-size: 0.8rem;
 
   .icons {
     display: flex;
@@ -17,6 +18,7 @@ const StatusBarContainer = styled.div`
 
   .icons svg {
     margin-left: 5px;
+    font-size: 1rem;
   }
 `;
 
